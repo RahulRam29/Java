@@ -2,7 +2,17 @@
 
 ![image](https://user-images.githubusercontent.com/74541810/135808511-ca7943b8-0a5d-4fad-8517-2f26a03e0992.png)
 
+<br /> 
+<div align = 'center'>
 
+     
+## [Link to Hacktoberfest website](https://hacktoberfest.digitalocean.com/)
+
+## [Link to Hacktoberfest Discord](https://discord.gg/hacktoberfest)
+
+</div>
+
+<br />
 
 ## _How to Contribute?_
 
