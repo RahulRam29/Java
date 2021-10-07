@@ -11,6 +11,8 @@ In many of the programs you code, you write functions that **call** or **invoke*
  }
  
  ```
+ But in a recursion, the function calls itself.
+ 
  **_What is the difference between a Non-Recursive Function and a Recursive Function ?_**
  
  |           Recursive Function              |          Non-Recursive Function              |
@@ -43,7 +45,7 @@ In many of the programs you code, you write functions that **call** or **invoke*
  
  ```
  
- ### Computing Recursion
+ ### Computing Factorial
  
  ```Java
  
@@ -93,16 +95,16 @@ import java.util.*;
  {
   public void execute()
   {
-    int answer=power(2,5);
+    int answer=pow(2,5);
     System.out.println(answer);
   }
-  public int power(int a,int b)
+  public int pow(int a,int b)
   {
     if(b==1)
       return a;
     else
     {
-       return a*power(a, b-1);
+       return a*pow(a, b-1);
     }
   }
  }
@@ -167,6 +169,50 @@ import java.util.*;
 ### How this output came ?
 
 ![Screenshot (190)](https://user-images.githubusercontent.com/76544476/136373114-e4393611-6e5d-4600-80a4-baf3c7c78673.png)
+
+
+### Computation of Fibonacci Numbers
+
+```Java
+
+import java.util.*;
+
+ class Start
+ {
+  public void execute()
+  {
+    int answer=fib(5);
+    System.out.println(answer);
+  }
+  public int fib(int a)
+  {
+    if(a<=1)
+      return a;
+    else
+    {
+       return fib(a-1)+fib(a-2);
+    }
+  }
+ }
+ public class Main
+ {
+  public static void main(String args[])
+  {
+    Start ob=new Start();
+    ob.execute();
+  }
+ }
+
+```
+
+### Output:
+
+> 5
+
+### How this output came ?
+
+![Screenshot (192)](https://user-images.githubusercontent.com/76544476/136374412-0ddf041b-7837-43dc-8fe3-2fb26c082d98.png)
+
 
 
 
