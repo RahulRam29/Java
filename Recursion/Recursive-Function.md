@@ -31,15 +31,43 @@ In many of the programs you code, you write functions that **call** or **invoke*
    A();
  }
  
- 2. Factorial
+ ```
  
- int fact(int n)
+ ## How Recursion works?
+ 
+ ```Java
+ 
+ import java.util.*;
+
+ class Start
  {
-    if(n==1||n==2)
-      return n;
+  public void execute()
+  {
+    int answer=factorial(5);
+    System.out.println(answer);
+  }
+  public int factorial(int a)
+  {
+    if(a==1)
+      return 1;
     else
-      return n*fact(n-1);
+    {
+       return a*factorial(a-1);
+    }
+  }
+ }
+ public class Main
+ {
+  public static void main(String args[])
+  {
+    Start ob=new Start();
+    ob.execute();
+  }
  }
  
- 
  ```
+ ### Output:
+ > 120
+
+### How this output comes ?
+
