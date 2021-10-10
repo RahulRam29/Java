@@ -29,12 +29,96 @@ Arrays consists of memory location which is of contiguous type. Array in Java is
 ## Single Dimensional Array:
 
 ### Syntax:
-#### Declaration of Array:
+### Declaration of Array:
 
 > datatype[] array_name; <br>
   (or)  <br>
 > datatype array_name[];
 
-#### Instantiation of Array:
+### Instantiation of Array:
 
 > array_name = **new** datatype[size];
+
+
+## Program to Demonstrate Single Dimensional Array:
+
+```Java
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int arr[]=new int[5];
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter array elements: ");
+	    for(int i=0;i<arr.length;i++)
+	    {
+	        arr[i]=sc.nextInt();
+	    }
+	    System.out.println("The array elements are : ");
+	    for(int i=0;i<arr.length;i++)
+	    {
+	        System.out.print(arr[i]+" ");
+	    }System.out.println();
+	    
+	}
+}
+
+
+```
+
+### Output:
+
+> Enter array elements: <br>
+> 1 2 3 4 5   <br>
+> The array elements are :  <br>
+> 1 2 3 4 5  <br>
+
+
+## Double Dimensional Array:
+
+### Syntax:
+### Declaration of Array:
+
+> datatype[][] array_name; <br>
+  (or)  <br>
+> datatype array_name[][];
+
+### Instantiation of Array:
+
+> array_name = **new** datatype[row][column];
+
+
+## Program to Demonstrate Double Dimensional Array:
+
+```Java
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int arr[][]={{1,2,3},{4,5,6},{7,8,9}}; 
+	  
+	    System.out.println("The array elements are : ");
+	    for(int i=0;i<3;i++)
+	    {
+	        for(int j=0;j<3;j++)
+	        {
+	          System.out.print(arr[i][j]+" ");
+	        }
+	    System.out.println();
+	    }
+	}
+}
+
+```
+
+### Output:
+
+> The array elements are : <br>
+> 1 2 3  <br>
+> 4 5 6  <br>
+> 7 8 9  <br>
+
+
+
