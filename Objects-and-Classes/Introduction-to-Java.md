@@ -11,5 +11,22 @@ On the other hand, Java applications are independent of the platform they run on
 The problem of platform independence of Java is solved by **byte code**. <br>
 <br>
 Contrary to ordinary compilers, Java compiler does not produce _native executable code_. Instead it produces **_byte code_**. The Java Byte Code is a 
-machine instruction for a Java processor chip called **_Java Virtual Machine(JVM)_**. The byte code is independent of the computer system it has to run upon.
+machine instruction for a Java processor chip called _Java Virtual Machine_. The byte code is independent of the computer system it has to run upon.
+
+## Java Virtual Machine
+
+For the execution process, the Java Byte code is interpreted by a special Java interpreter for a particular platform, this interpreter is 
+called as **_Java Virtual Machine(JVM)_**. JVM is a abstract machine which is implemented on the top of existing processors. JVM combined with Java APIs
+makes Java platform. <br>
+<br>
+So, a Java program written on any platform is compiled by Java compiler called **_javac_** to generate **_byte code_**. This byte can be used on any platform that has installed java. Then the Java interpreter executes them.
+
+## Features of Java 
+
+<div align="center">
+<img src = "https://user-images.githubusercontent.com/76544476/136923750-1532a41d-d4bb-40b2-a0cf-cc1c5915c0e4.png" width="400" heigth="600">
+</div>
+
+<p align =center>
+    Source: https://www.javatpoint.com/features-of-java
 
